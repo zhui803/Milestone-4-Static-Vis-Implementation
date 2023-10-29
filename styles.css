@@ -1,0 +1,146 @@
+.country {
+    fill: #ccc;
+    stroke: #999;
+}
+
+.right-column, .left-column{
+    flex: 2;
+}
+
+.left-column{
+    padding-top: 100px;
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+    padding-top: 80px;
+    /* padding-left: 15px; */
+    padding-right: 500px;
+}
+
+.author {
+    font-family: Baskerville;
+    font-weight: normal;
+    text-align: center;
+    font-style: italic;
+    font-size: 60px;
+  }
+
+.poem-title{
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-family: Baskerville;
+    text-align: center;
+}
+
+.region-dropdown {
+    position: relative; /* Add this */
+    top: 75px; 
+    left: 90px; 
+    z-index: 100; 
+    width: 150px; /* Adjusted width from 1px */
+    height: 60px;
+    font-size: 25px;
+    transform: scale(2);   
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #D2E0FB;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.map-container {
+    height: 100%;  
+    padding-top: 125px; 
+    padding-left: 350px; 
+    transform: scale(1.5);   
+}
+
+.slider-container{
+    position: relative;
+    transform: scale(2);   
+    padding-top: 350px;   
+    padding-left: 450px; 
+    cursor: pointer; 
+}
+
+.color-gradient-bar{
+    position: relative;
+    transform: scale(1.5);
+    padding-left: 350px;
+    padding-bottom: 650px;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%; 
+    padding: 100px;
+}
+
+.right-column-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFEFD3;
+    border-radius: 90px; 
+    margin: auto;
+}
+
+div{
+    display: block;
+}
+
+.filler-verse{
+    height: 100px;
+}
+
+.right-column-content ul {
+    list-style-type: none;  
+    padding-left: 80px;  
+    padding-right: 80px;
+    font-size: 45px;  
+    /* font-style:italic; */
+    text-align: left;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+    font-family: Baskerville;
+}
+
+.right-column-content ul li:first-child::first-letter {
+    font-size: 60px; 
+    float: left;
+    padding-right: 5px; 
+    line-height: 0.6;
+}
+
+footer {
+    display: flex;
+    justify-content: center;  
+    gap: 50px;  
+    padding: 10px 0; 
+}
+
+.arrow-button {
+    padding: 15px 30px;  /* Increase padding to make the button larger. 15px top and bottom, 30px left and right. */
+    font-size: 24px;  /* Increase font size for the arrow symbols */
+    cursor: pointer;  
+    border: none; 
+    background-color: #D7E5CA; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+.arrow-button:hover {
+    background-color: #8EACCD;  /* Darken the background on hover */
+}
