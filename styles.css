@@ -35,15 +35,19 @@
 }
 
 .region-dropdown {
-    position: relative; /* Add this */
+    position: relative;
     top: 75px; 
-    left: 90px; 
+    left: 70px; 
     z-index: 100; 
-    width: 150px; /* Adjusted width from 1px */
+    width: 150px; 
     height: 60px;
     font-size: 25px;
-    transform: scale(2);   
+    transform: scale(1.8);   
     font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#region-dropdown, #region-dropdown option {
+    font-size: 16px;  
 }
 
 
@@ -136,7 +140,7 @@ footer {
     font-size: 24px;  /* Increase font size for the arrow symbols */
     cursor: pointer;  
     border: none; 
-    background-color: #D7E5CA; 
+    background-color: #FECDA6; 
     border-radius: 5px; 
     transition: background-color 0.3s;
 }

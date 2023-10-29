@@ -79,8 +79,30 @@ const sliderHandle = sliderSVG.append("rect")
     }));
 
 // Year labels on the slider
-sliderSVG.append("text").attr("x", (sliderWidth - 400) / 2).attr("y", (sliderHeight - 20) / 2 - 5).attr("text-anchor", "start").text("1960");
-sliderSVG.append("text").attr("x", (sliderWidth + 400) / 2).attr("y", (sliderHeight - 20) / 2 - 5).attr("text-anchor", "end").text("2021");
+// sliderSVG.append("text").attr("x", (sliderWidth - 400) / 2).attr("y", (sliderHeight - 20) / 2 - 5).attr("text-anchor", "start").text("1960");
+// sliderSVG.append("text").attr("x", (sliderWidth + 400) / 2).attr("y", (sliderHeight - 20) / 2 - 5).attr("text-anchor", "end").text("2021");
+
+sliderSVG.append("text")
+    .attr("x", 200)  // Start from the very left
+    .attr("y", (sliderHeight - 20) / 1.5)
+    .attr("text-anchor", "start")
+    .attr("font-size", "20px") 
+    .attr("dominant-baseline", "middle")  // Vertical centering
+    .text("1960");
+
+sliderSVG.append("text")
+    .attr("x", sliderWidth - 200)  // Go to the very right
+    .attr("y", (sliderHeight - 20) / 1.5)
+    .attr("text-anchor", "end")
+    .attr("font-size", "20px") 
+    .attr("dominant-baseline", "middle")  // Vertical centering
+    .text("2021");
+
+// let arrowSize = 10; 
+
+// sliderSVG.append("path")
+//     .attr("d", `M${sliderWidth / 2 - arrowSize} ${sliderHeight + 25} L${sliderWidth / 2} ${sliderHeight + 25 + arrowSize} L${sliderWidth / 2 + arrowSize} ${sliderHeight + 25} Z`)
+//     .attr("fill", "black");
 
 // Display for current year
 const yearDisplay = sliderSVG.append("text")
@@ -243,11 +265,6 @@ function drawLegend() {
         .text("No data");
 }
 
-////
-// const poemContent = [
-//     ["Line 1 of verse 1", "Line 2 of verse 1", "Line 3 of verse 1", "Line 4 of verse 1"],
-//     ["Line 1 of verse 2", "Line 2 of verse 2"],
-// ];
 
 let keyframeIndex = 0;
 
