@@ -136,8 +136,8 @@ footer {
 }
 
 .arrow-button {
-    padding: 15px 30px;  /* Increase padding to make the button larger. 15px top and bottom, 30px left and right. */
-    font-size: 24px;  /* Increase font size for the arrow symbols */
+    padding: 15px 30px;  
+    font-size: 24px; 
     cursor: pointer;  
     border: none; 
     background-color: #FECDA6; 
@@ -146,5 +146,5 @@ footer {
 }
 
 .arrow-button:hover {
-    background-color: #8EACCD;  /* Darken the background on hover */
+    background-color: #8EACCD;  
 }
